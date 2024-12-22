@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "3Dump";
+    src: url("../assets/Fonts/3Dumb.ttf");
+}
+@font-face {
+    font-family: "icon";
+    src: url("../assets/Fonts/Venesia.ttf");
+}
+@font-face {
+    font-family: "alata-reglar";
+    src: url("../assets/Fonts/alata-regular.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #d9fad6;
+    overflow-x: hidden;
+    position: relative;
+}
+
+main h1{
+    text-align: center;
+    font-family: '3Dump';
+}
