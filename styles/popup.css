@@ -1,9 +1,8 @@
 .popup {
     height: 80%;
     width: 80%;
-    background-color: #d8f6d8; /* Light green matching the background */
-    color: #303030;
-
+    background-color: #f0f8ff; /* Soft blue for better readability */
+    color: #2a2a2a;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -13,7 +12,7 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px, rgba(0, 0, 0, 0.1) 0px 6px 10px;
     padding: 20px;
     overflow-y: auto;
-    border: 2px solid rgba(0, 128, 0, 0.3); /* Slightly darker green border */
+    border: 2px solid rgba(0, 0, 128, 0.3); /* Light blue border */
     /* display: none; */
 }
 
@@ -21,26 +20,30 @@
     display: none;
 }
 
-.popup h2 {
-    text-align: start;
+.popup h1, .popup h2, .popup h3 {
+    text-align: left;
     font-size: 1.5em;
-    color: #355e3b; /* Darker green for heading text */
+    color: #2b5797; /* Blue shade for headings */
     margin-top: 20px;
 }
 
-.popup p {
+.popup p, .popup li {
     text-align: justify;
     line-height: 1.6;
     font-size: 1em;
     margin: 10px 0;
-    color: #2e4e2b; /* Slightly darker green for paragraph text */
+    color: #2a2a2a;
+}
+
+.popup ul {
+    padding-left: 20px;
 }
 
 .popup button {
     display: block;
     margin: 20px auto 0 auto;
     padding: 10px 20px;
-    background-color: #6bbd6b; /* Softer green for the button */
+    background-color: #4682b4; /* Softer blue for the button */
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -51,11 +54,20 @@
 }
 
 .popup button:hover {
-    background-color: #4c9f4c; /* Darker green for hover state */
+    background-color: #31688e; /* Darker blue for hover state */
 }
 
 .popup .scrollDown {
     position: absolute;
     bottom: 20px;
-    color: #2e4e2b; /* Matching darker green for any scrollDown text or icon */
+    color: #2b5797;
+}
+
+.example-image {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
