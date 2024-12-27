@@ -13,7 +13,7 @@
     padding: 20px;
     overflow-y: auto;
     border: 2px solid rgba(0, 0, 128, 0.3); /* Light blue border */
-    display: none;
+    /* display: none; */
 }
 
 .popup::-webkit-scrollbar {
