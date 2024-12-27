@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/menu.css">
     <link rel="stylesheet" href="./styles/tree.css">
 </head>
+
 <body>
     <div class="loader">
         <div class="content">
@@ -30,19 +31,24 @@
         <div class="tree-container">
 
             <div class="tree rootNode">
-                
+
             </div>
 
         </div>
 
         <div class="popup">
             <h1>Binary Search Tree (BST)</h1>
-            <p>A Binary Search Tree (or BST) is a data structure used in computer science for organizing and storing data in a sorted manner. Each node in a Binary Search Tree has at most two children: a left child and a right child, with the left child containing values less than the parent node and the right child containing values greater than the parent node. This hierarchical structure allows for efficient searching, insertion, and deletion operations on the data stored in the tree.</p>
-        
+            <p>A Binary Search Tree (or BST) is a data structure used in computer science for organizing and storing
+                data in a sorted manner. Each node in a Binary Search Tree has at most two children: a left child and a
+                right child, with the left child containing values less than the parent node and the right child
+                containing values greater than the parent node. This hierarchical structure allows for efficient
+                searching, insertion, and deletion operations on the data stored in the tree.</p>
+
             <h2>Example</h2>
-            <p>The tree below demonstrates a Binary Search Tree. Here, the root node is 40, all the nodes in the left subtree are smaller, and those in the right subtree are larger. This satisfies the BST property:</p>
+            <p>The tree below demonstrates a Binary Search Tree. Here, the root node is 40, all the nodes in the left
+                subtree are smaller, and those in the right subtree are larger. This satisfies the BST property:</p>
             <img src="./assets/images/image.png" alt="BST Example" class="example-image">
-        
+
             <h2>Properties of Binary Search Tree</h2>
             <ul>
                 <li>Each node has a value.</li>
@@ -52,7 +58,7 @@
                 <li>There must be no duplicate nodes.</li>
             </ul>
             <button id="popup-close">Close</button>
-        
+
             <!-- Scroll Button -->
             <div class="scrollButton">
                 <span></span>
@@ -60,8 +66,8 @@
                 <span></span>
             </div>
         </div>
-        
-        
+
+
 
         <div class="menu">
             <h1>+</h1>
@@ -96,6 +102,11 @@
                     <button type="submit" id="deleteSubmit">Delete</button>
                 </form>
                 <form id="print">
+                    <select name="type" id="Traversing search">
+                        <option value="Inorder">Inorder</option>
+                        <option value="Preorder">Preorder</option>
+                        <option value="Postorder">Postorder</option>
+                    </select>
                     <button type="submit" id="printSubmit">print</button>
                 </form>
             </div>
@@ -110,6 +121,9 @@
     <script src="./scripts/popup.js"></script>
     <script src="./scripts/menu.js"></script>
     <script src="./scripts/BST_insert.js"></script>
+    <script src="./scripts/search.js"></script>
+    <script src="./scripts/delete.js"></script>
+    <script src="./scripts/traverse.js"></script>
 </body>
 
 </html>

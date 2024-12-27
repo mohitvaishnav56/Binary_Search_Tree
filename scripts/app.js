@@ -74,3 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+const highlightNode = (value) => {
+    const nodes = document.querySelectorAll(".value");
+    nodes.forEach((node) => {
+      if (node.textContent == value) {
+        node.classList.add("highlight"); // Add a highlight class for CSS effects
+        setTimeout(() => node.classList.remove("highlight"), 2000); // Remove after 2 seconds
+      }
+    });
+  };
