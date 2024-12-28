@@ -54,9 +54,8 @@ const insert = () => {
   }
   const numVal = Number(data);
   obj = insrtNum(obj, numVal);
-  main(); // Refresh the tree rendering
+  main();
   document.querySelector("#input").value = ""; // Clear input
 };
 
-// Initialize rendering
 main();
