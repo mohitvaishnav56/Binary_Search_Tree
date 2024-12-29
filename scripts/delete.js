@@ -1,13 +1,13 @@
 const deleteNum = (node, value) => {
     if (node === null) {
       alert("Value not found in the tree.");
-      return null; // Node not found
+      return null;
     }
   
     if (value < node.value) {
-      node.left = deleteNum(node.left, value); // Traverse left subtree
+      node.left = deleteNum(node.left, value);
     } else if (value > node.value) {
-      node.right = deleteNum(node.right, value); // Traverse right subtree
+      node.right = deleteNum(node.right, value);
     } else {
       // Node to be deleted found
       if (node.left === null && node.right === null) {
@@ -21,9 +21,9 @@ const deleteNum = (node, value) => {
         return node.left;
       } else {
         // Case 3: Two children
-        const successor = findMin(node.right); // Find in-order successor
-        node.value = successor.value; // Replace value
-        node.right = deleteNum(node.right, successor.value); // Delete successor
+        const successor = findMin(node.right);
+        node.value = successor.value;
+        node.right = deleteNum(node.right, successor.value); 
       }
     }
   
@@ -44,7 +44,7 @@ const deleteNum = (node, value) => {
       return;
     }
     const numVal = Number(data);
-    obj = deleteNum(obj, numVal); // Perform deletion
+    obj = deleteNum(obj, numVal);
     main(); // Refresh the tree rendering
     document.querySelector("#deleteInput").value = ""; // Clear input
   };
