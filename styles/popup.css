@@ -24,7 +24,8 @@
     text-align: left;
     font-size: 1.5em;
     color: #2b5797; /* Blue shade for headings */
-    margin-top: 20px;
+    margin-top: 2px;
+    height: fit-content;
 }
 
 .popup p, .popup li {
