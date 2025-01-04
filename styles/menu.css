@@ -117,3 +117,13 @@
 .forms form button:active {
     background-color: #32a452; /* Even darker green for active */
 }
+
+@media(max-width: 320px){
+    .menu{
+        width: 40px;
+    }
+    .menu h1{
+        height: fit-content;
+        font-size: 4Vh;
+    }
+}

@@ -18,7 +18,11 @@ menuIcon.addEventListener("click", () => {
     }else{
         menuIcon.style.transform = "rotate(0deg)";
         menuList.style.left = "-100%";
-        menuDiv.style.width = "80px";
+        if(window.matchMedia("(max-width: 320px)").matches){
+            menuDiv.style.width = "40px";
+        }else{
+            menuDiv.style.width = "80px";
+        }
         menuDiv.style.border = "none";
         menuList.style.border = "none";
         count = 0;

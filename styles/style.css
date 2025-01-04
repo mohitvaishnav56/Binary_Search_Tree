@@ -35,3 +35,16 @@ main h1{
     font-family: '3Dump';
 }
 
+@media (max-width: 320px){
+    main h1{
+        font-size: 22px;
+        height: 5%;
+    }
+}
+
+@media (max-width: 500px){
+    main h1{
+        font-size: 22px;
+        height: 5%;
+    }
+}
