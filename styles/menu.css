@@ -37,6 +37,7 @@
 .menu-list h1{
     font-family: 'alata-regular';
     color: #dfffd9;
+    height: fit-content;
 }
 
 .tabs{
